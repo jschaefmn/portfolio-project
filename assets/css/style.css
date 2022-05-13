@@ -11,3 +11,53 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+  background: var(--tertiary-color);
+}
+
+header {
+  display: flex;
+  background-color: var(--quinary-color);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  display: inline;
+  color: white;
+  margin: 10px 0;
+  background: var(--secondary-color);
+  padding: 20px 20px 20px 150px;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+header nav {
+  margin: 20px;
+  padding: 10px 60px 10px 20px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header nav ul li a {
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--primary-color);
+  margin: 20px;
+}
+
+.hero {
+  background-image: url("../imgs/hockey-arena.jpeg");
+}
