@@ -15,6 +15,7 @@
 body {
   font-family: Tahoma, Verdana, Geneva, sans-serif;
   background: var(--tertiary-color);
+  /* max-width: 1920px; */
 }
 
 header {
@@ -22,6 +23,7 @@ header {
   background-color: var(--quinary-color);
   justify-content: space-between;
   flex-wrap: wrap;
+  /* max-width: 1920px; */
 }
 
 header h1 {
@@ -69,20 +71,21 @@ section h2 {
 .hero {
   background-image: url("../imgs/hockey-arena.jpeg");
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
   background-position: -360px -400px;
-  display: flex;
   height: 400px;
+  /* max-width: 1920px; */
 }
 
-/* .hero div {
+.hero div {
   background: var(--quinary-color);
   width: auto;
   height: 40px;
   bottom: 20px;
   right: 20px;
   position: fixed;
-} */
+}
 
 .all-about-me {
   display: flex;
@@ -103,10 +106,34 @@ section h2 {
   line-height: 1.5;
 }
 
-.work {
+
+.big-container {
   display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
 }
 
 .container {
+  display: inline-block;
   display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 0;
+}
+
+.work-item img {
+  max-width: 590px;
+}
+
+.primary-img img {
+  max-width: 1200px;
+}
+
+.container img {
+  border: 4px solid var(--primary-color);
+}
+
+.work h2 {
+  height: 900px;
 }
