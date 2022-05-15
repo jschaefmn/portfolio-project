@@ -72,10 +72,11 @@ section h2 {
   background-image: url("../imgs/hockey-arena.jpeg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  background-position: -360px -400px;
-  height: 400px;
-  /* max-width: 1920px; */
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  height: 450px;
+  background-position-y: -750px;
+  max-width: 100vw;
 }
 
 .hero div {
@@ -91,49 +92,64 @@ section h2 {
   display: flex;
   justify-content: space-evenly;
   margin-top: 40px;
-  flex-wrap: wrap;
-  padding: 30px;
+  /* flex-wrap: wrap; */
 }
 
 .all-about-me h2 {
   height: 262px;
+  width: 22vw;
 }
 
 .all-about-me p {
   color: var(--primary-color);
   font-size: 18px;
-  width: 800px;
+  width: 70vw;
   line-height: 1.5;
 }
 
 
 .big-container {
+  margin-top: 40px;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 40px;
 }
 
-.container {
-  display: inline-block;
+.work {
+  width: 65vw;
+}
+
+.small-container {
   display: flex;
-  max-width: 1200px;
   flex-wrap: wrap;
-  justify-content: space-between;
-  flex-grow: 0;
+  justify-content: space-evenly;
 }
 
-.work-item img {
-  max-width: 590px;
+
+.work-item1 {
+  width: 70vw;
 }
 
-.primary-img img {
-  max-width: 1200px;
+.item {
+  flex: 0;
 }
 
-.container img {
-  border: 4px solid var(--primary-color);
+
+.item img {
+  border: 8px solid var(--primary-color);
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
 
-.work h2 {
-  height: 900px;
+img:hover {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.image1 {
+  max-width: 71vw;
+}
+
+.work-image {
+  max-width: 32vw;
+  /* max-height: 20vh; */
 }
