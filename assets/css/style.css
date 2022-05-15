@@ -12,6 +12,15 @@
   box-sizing: border-box;
 }
 
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--primary-color);
+  margin: 20px;
+}
+
 body {
   font-family: Tahoma, Verdana, Geneva, sans-serif;
   background: var(--tertiary-color);
@@ -36,31 +45,19 @@ header h1 {
   padding: 20px 20px 20px 150px;
 }
 
-header a {
-  text-decoration: none;
-  color: var(--primary-color);
-}
-
-header nav {
+nav {
   margin: 20px;
   padding: 10px 60px 10px 20px;
 }
 
-header nav ul {
+nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-header nav ul li a {
-  font-size: 30px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--primary-color);
-  margin: 20px;
-}
-
-section h2 {
+.title-card {
   color: var(--primary-color);
   padding-right: 10px;
   border-right: 2px solid var(--primary-color);
@@ -151,5 +148,81 @@ img:hover {
 
 .work-image {
   max-width: 32vw;
-  /* max-height: 20vh; */
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  background: var(--quinary-color);
+}
+
+footer nav {
+  width: 60vw;
+}
+
+footer .title-card {
+  width: 25vw;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    width: 100vw;
+    margin-top: 0;
+  }
+
+  .all-about-me h2 {
+    height: 17vw;
+  }
+
+  .hero {
+    display: none;
+  }
+
+  .all-about-me {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .title-card {
+    border-bottom: 2px solid var(--primary-color);
+    border-right: none;
+    text-align: none;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .big-container {
+    width: 50vw;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-image {
+    max-width: 72vw;
+  }
+
+  .work-content {
+    align-self: center;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  section div {
+    align-self: center;
+  }
+
+  footer div {
+    align-self: center;
+  }
+
+  footer nav {
+    width: 100vw;
+  }
+
+  footer nav li {
+    margin-top: 15px;
+  }
 }
