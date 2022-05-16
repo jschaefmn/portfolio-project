@@ -11,3 +11,9 @@
 - In my footer, you can see all the different ways to reach me!
 - I have left my twitter and LinkedIn links set to direct to nothing as I have not set those profiles up yet, but as soon as I have those the links will get updated
 - I am still working through some issues will the flex box of my site that I hope to resolve in the near future.
+
+
+### Link and Screenshot to Deployed Application
+Visit: https://jschaefmn.github.io/portfolio-project/
+
+<img src="./assets/imgs/deployed-page-sc.png">
