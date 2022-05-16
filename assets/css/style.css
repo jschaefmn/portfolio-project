@@ -130,7 +130,7 @@ nav ul {
   flex: 0;
 }
 
-
+/* found opacity transiton from stackoverflow */
 .item img {
   border: 8px solid var(--primary-color);
   opacity: 0.5;
